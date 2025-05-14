@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 20px auto;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #f5f5f5;
+            color: black;
+            border: 1px solid #ccc;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+    <style>
+        .flip-card-front {
+            text-align: center; /* Centers content */
+        }
+    
+        .flip-card-front img {
+            width: 80px; /* Adjust image size */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto 10px; /* Center image and add spacing */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="typewriter">Hello, I am Megha John Babu!</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certification">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="profile">       
+        <div class="profile-container">
+            <div class="profile-pic-container">
+                <img src="images/profile-pic.jpeg" alt="Megha's Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </section>
+    <style>
+        #profile {
+            text-align: center;
+        }
+        .profile-pic-container {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centers the image */
+            margin-bottom: 20px; /* Adds space below the profile picture */
+        }
+    
+        .profile-pic {
+            width: 250px; /* Set width */
+            height: 250px; /* Set height */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image fits the frame */
+            border: 2px solid #ccc; /* Optional: Adds a border around the image */
+        }
+    </style>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science enthusiast specializing in Software Development, Artificial Intelligence, Machine learning and real-time applications. <br> With a solid foundation in Machine Learning, Web Development, and System Design, I continuously push the boundaries of innovation.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcvixRnmVQb-uz5-baleCVk_qaCnHUqqY_g&s" alt="California State University, San Bernardino" style="width: 80px; height: auto;">
+                    <p> <strong>California State University, San Bernardino, CA </strong> <br> Master's in Computer Science <br> Aug 2023 - May 2025 <br> GPA - 3.8</p>
+                </div>
+                <div class="flip-card-back">
+                    <p> <strong>Relevant Courses:</strong> <br> - Theory of Algorithms <br> - Operating systems <br> - Software Engineering  <br> - Artificial Intelligence and Machine Learning <br> - Web Technology <br> - Database Management Systems and SQL<br> - Computation and Complexity Thoery <br> -  Modern Computer Architecture </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p> <strong>Cambridge Institute of Technology, India </strong> <br> Bachelor's in Computer Science and Engineering <br> May 2018 - Aug 2022 <br> GPA - 3.6</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJWQkc9Cp3g_2hYFwgC7Fnw4ya4SUhkZIFw&s" alt="Cambridge Institute of Technology, India" style="width: 80px; height: auto;">
+                </div>
+                <div class="flip-card-back">
+                    <p> <strong>Relevant Courses:</strong> <br> - Python Programming <br> - C and Java Programming <br> - Object Oriented Programming using C++ <br> - Artificial Intelligence and Machine Learning and its applications <br> - Web Technology <br> - Big Data and Hadoop <br> Algorithms and Data Structures </p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://www.zdnet.com/a/img/resize/0e3e1ca1f353aaa1de88acb5a125944b2d5f1896/2021/04/07/b0a3f77a-2e1f-45da-9c72-159d9ed89466/istock-1206801125.jpg?auto=webp&fit=crop&height=900&width=1200" alt="AI - powered Virtual Assistant" style="width: 100px; height: auto;">
+                        <h3>AI-powered Virtual Assistant</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- Developed using Python, NLP, and Speech Recognition<br>- Integrated Text-to-Speech for voice feedback<br>- Implemented ML models for contextual understanding<br>- Deployed across multiple platforms</p>
+                        <a href="https://github.com/John27052001/AI-powered-Virtual-Assistant" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/job-tracker-thumbnail.png" alt="Job Tracker App" style="width: 100px; height: auto;">
+      <h3>Job Tracker App</h3>
+    </div>
+    <div class="flip-card-back">
+      <p>
+        - Full-stack app with login & session auth<br>
+        - MongoDB for job storage<br>
+        - Add, delete, and track job statuses<br>
+        - Color-coded dashboard with EJS
+      </p>
+      <a href="https://github.com/John27052001/job-tracker-app" target="_blank">
+        <button style="padding: 10px 20px; background-color: white; color: black; border: 1px solid black; border-radius: 5px; cursor: pointer; width: 100%">View on GitHub</button>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/notes.png" alt="Notes App" style="width: 100px; height: auto;">
+        <h3>Notes App</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>
+          - Create, edit, and delete notes<br>
+          - MongoDB + Express for data persistence<br>
+          - Clean UI with EJS templating<br>
+          - User-friendly, fast, and expandable
+        </p>
+        <a href="https://github.com/John27052001/notes-app" target="_blank">
+          <button style="padding: 10px 20px; background-color: white; color: black; border: 1px solid black; border-radius: 5px; cursor: pointer; width: 100%">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/todo.jpeg" alt="To-Do List" style="width: 100px; height: auto;">
+        <h3>To-Do-List</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>
+          - Simple CRUD app to manage daily tasks<br>
+          - Built with Node.js, Express, and MongoDB<br>
+          - Add, delete, and list tasks<br>
+          - EJS templating with clean HTML/CSS
+        </p>
+        <a href="https://github.com/John27052001/todo-app" target="_blank">
+          <button style="padding: 10px 20px; background-color: white; color: black; border: 1px solid black; border-radius: 5px; cursor: pointer; width: 100%">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+<div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/blog.webp" alt="Blog CMS" style="width: 100px; height: auto;">
+        <h3>Blog CMS</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>
+          - Full-stack blog platform with Node.js & MongoDB<br>
+          - Add, edit, delete blog posts<br>
+          - EJS templating, MongoDB storage<br>
+          - Admin dashboard + content management
+        </p>
+        <a href="https://github.com/John27052001/blog-cms-nodejs" target="_blank">
+          <button style="padding: 10px 20px; background-color: white; color: black; border: 1px solid black; border-radius: 5px; cursor: pointer; width: 100%">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQFYAwqCnVPChg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691045078079?e=2147483647&v=beta&t=xrwkrzF7rrtdri-Z_2ZyeLQF5jMQ3dfpp_-4Re8yqr0" alt="Real-time face recognition" style="width: 120px; height: auto;">
+                        <h3>Real-time Face Recognition</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- Real-time face detection using OpenCV and Python <br>- Face recognition with Eigenfaces, Fisherfaces, or LBPH<br>- Live video feed integration<br>- Applications in security and attendance</p>
+                        <a href="https://github.com/John27052001/Real-time-face-recognition-using-OpenCV-and-python" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy634RpYleQ-cGe2st-qkRumVOqdlCwy63NA&s" alt="AI Powered Image Caption Generator" style="width: 120px; height: auto;">
+                        <h3>AI-Powered Image Caption Generator</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- Developed a deep learning model that generates descriptive captions for images<br>- Used CNN and processed and trained on the COCO dataset, improving accuracy with Beam Search<br>- Built an interactive Flask web app for real-time image captioning</p>
+                        <a href="https://github.com/John27052001/AI-Image-caption-Generator" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://static01.nyt.com/images/2014/12/11/technology/personaltech/11machin-illo/11machin-illo-articleLarge-v3.jpg?quality=75&auto=webp&disable=upscale" alt="Weather Dashboard" style="width: 100px; height: auto;">
+                        <h3>Weather Dashboard</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- Weather Dashboard<br>- Search for any city's weather<br>- Displays temperature and weather conditions<br>- Simple and responsive design</p>
+                        <a href="https://github.com/John27052001/Weather-Dashboard-project" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/tictactoe.webp" alt="Tic - Tac - Toe" style="width: 100px; height: auto;">
+                        <h3>Tic-Tac-Toe</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- 2D board representation<br>- Input validation and turn management<br>- Win condition checks<br>- Optional GUI with Tkinter</p>
+                        <a href="https://github.com/John27052001/Tic-tac-toe" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 300px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://puzzlegenius.org/wp-content/uploads/2021/11/example-1-solution.png" alt="Maze - Solver" style="width: 100px; height: auto;">
+                        <h3>Maze - Solver</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>- Implemented algorithms like DFS, BFS, and A* to solve maze<br>- Used Pygame (or similar) to visually display the maze-solving process<br>- Created a feature to generate random mazes with varying difficulty levels<br>- Focused on finding the shortest path efficiently using A* algorithm</p>
+                        <a href="https://github.com/John27052001/Maze-solver" target="_blank">
+                            <button style="padding: 10px 20px; background-color: white; color:black; border: 1px solid black; border-radius: 5px; cursor: pointer; width:100%">View on GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-card" data-aos="fade-up">
+            <h3>Instructional Student Assistant – Computation & Complexity Theory & Automata | San Bernardino, CA  | Jan 2025-Ongoing </h3>
+            <p> - Assisted students in understanding algorithmic complexity, NP-completeness, and automata theory <br> - Conducted coding sessions on graph algorithms, dynamic programming, and formal languages <br> - Provided guidance on optimizing algorithms for real-world software applications </p>
+        </div>
+        <div class="experience-card" data-aos="fade-up">
+            <h3> Software Engineering Intern | Compsoft Technologies | Bangalore, India	  | Apr 2022-June 2022 </h3>
+            <p> - Developed a full-stack web application, improving user experience through interactive UI design <br> - Designed and optimized RESTful APIs to handle thousands of concurrent users <br> - Implemented JWT-based authentication for secure access control </p>
+        </div>
+        <div class="experience-card" data-aos="fade-up">
+            <h3> Software Developer Intern | Hindustan Aeronautics Limited | Bangalore, India	 |   Jan 2022-Mar 2022</h3>
+            <p> - Managed SQL and NoSQL databases, optimizing queries for faster processing <br> - Developed and debugged business logic modules to enhance application performance <br> - Assisted in refactoring legacy code, improving maintainability and efficiency </p>
+        </div>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certification-card-container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 350px;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/google-cert.png" alt="Google IT Automation with Python Professional Certificate" style="width: 100%; max-width: 350px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Skills:</strong><br>- Python<br>- IT Automation and Scripting<br>- Version Control with Git and GitHub<br>- Cloud and Configuration Management<br>- Networking and Security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 350px;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/software__engineer IBM.png" alt="Software Engineer" style="width: 100%; max-width: 350px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Skills:</strong><br>- Python Programming <br>- Software Architecture<br>- Agile and Scrum <br>- Software Development Lifecycle (SDLC) </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" style="flex: 1 0 30%; margin: 15px; max-width: 350px;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/software-engineer.png" alt="Software Engineer Skills" style="width: 100%; max-width: 350px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                        </div>
+                        <div class="flip-card-back">
+                            <p><strong>Skills:</strong><br>- Python Programming<br>- C# Programming<br>- Problem Solving<br>- SQL<br>- REST API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="mailto:meghajohnbabu@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/John27052001" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/megha-john-babu" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+</body>
+</html>
