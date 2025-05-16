@@ -175,7 +175,19 @@ header {
     color: #0A66C2;
 }
 
-
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+.flip-card {
+    flex: 1 0 300px;
+    max-width: 300px;
+    height: auto;
+  }
+  
 .experience-card {
     margin: 20px;
     padding: 15px;
