@@ -397,4 +397,11 @@ header {
     transition: width 0.6s ease;
     border-radius: 5px;
   }
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-left: 20px;
+    text-align: left;
+}
   
