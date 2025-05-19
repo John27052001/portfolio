@@ -344,12 +344,6 @@ header {
     padding: 50px 40px;
     text-align: left;
   }
-  
-#skills h2 {
-    text-align: left !important;
-    margin-left: 0;
-    padding-left: 0;
-}  
 
   .skill-legend {
     text-align: left;
