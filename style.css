@@ -11,12 +11,6 @@
     border: 5px solid #ccc; /* Optional: adds a border around the image */
 }
 
-#about {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 
 body {
     font-family: Arial, sans-serif;
