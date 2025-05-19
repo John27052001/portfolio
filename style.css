@@ -340,34 +340,41 @@ header {
     transform: rotateY(180deg);
 }
 
-#tech-stack {
+#skills {
     padding: 40px 0;
     text-align: center;
   }
   
-  .tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 30px;
-    margin-top: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
   }
   
-  .tech-item {
+  .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
-    color: #333;
     transition: transform 0.3s ease;
   }
   
-  .tech-item:hover {
+  .skill:hover {
     transform: scale(1.1);
   }
   
-  .tech-item span {
-    font-size: 0.9rem;
-    margin-top: 8px;
+  .skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
   }
   
