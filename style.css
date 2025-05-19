@@ -368,7 +368,7 @@ header {
   
   .skill-bar {
     margin-bottom: 12px;
-    
+
   }
   
   .skill-bar span {
@@ -390,4 +390,19 @@ header {
     background-color: #000;
     border-radius: 6px;
   }
-  
+  .bar {
+  width: 100%;
+  max-width: 200px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: black;
+  transition: width 0.6s ease;
+  border-radius: 5px;
+}
