@@ -400,4 +400,9 @@ section {
     text-align: center !important;
     padding-left: 0;
   }
-  
+
+  #skills h2 {
+    text-align: left !important;
+    margin-left: 0;
+    padding-left: 20px;
+}
