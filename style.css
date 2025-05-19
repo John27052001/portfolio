@@ -408,4 +408,11 @@ section {
     width: 100% !important;
     display: block;
   }
+  #skills > h2 {
+    text-align: left !important;
+    padding-left: 20px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    display: block;
+  }
   
