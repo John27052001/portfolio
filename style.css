@@ -346,9 +346,8 @@ header {
   }
   
 #skills h2 {
-    text-align: left !important;
-    padding-left: 20px;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-left:0;
   }
   
   .skill-legend {
