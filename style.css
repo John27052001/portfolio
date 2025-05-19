@@ -378,12 +378,6 @@ header {
     color: #333;
   }
   
-  .bar {
-    background-color: #ddd;
-    border-radius: 6px;
-    overflow: hidden;
-    height: 10px;
-  }
   
   .bar > div {
     height: 10px;
