@@ -339,3 +339,35 @@ header {
 .flip-card-back {
     transform: rotateY(180deg);
 }
+
+#tech-stack {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .tech-item span {
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+  
